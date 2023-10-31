@@ -1,0 +1,277 @@
+:root {
+	--main-color:  #FFF;
+	--secondary-color: #303030;
+	--main-btn-color:  #FFF;
+	--accent-color:  #FF6C00;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+}
+li {
+   list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+
+.section-title {
+    font-family: Raleway, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 2.1px;
+}
+
+.pre-title {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.after-title {
+    font-size: 18px;
+    line-height: 1.67; /* 166.667% */
+    letter-spacing: 0.36px;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+}
+
+/* --------------HEADER----------------- */
+
+.header-link, .header-tel {
+    color:var(--main-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.header-link:hover, .header-link:focus, .header-tel:hover, .header-tel:focus{
+    color: var(--accent-color);
+}
+
+.header {
+    background-color: darkgrey;
+}
+
+.header-btn {
+    color:var(--main-btn-color);
+}
+
+
+/* --------------HERO----------------- */
+.hero {
+    background-color: blue;
+}
+
+.hero-link {
+    color:var(--secondary-color);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+}
+
+.hero-link:hover, .hero-link:focus{
+    color:var(--accent-color);
+}
+.hero-pre-title {
+    color: rgba(157, 164, 189, 0.60);
+}
+.hero-title {
+    color:var(--main-color);
+    font-family: Raleway, sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.6px;
+}
+.hero-after-title {
+    color: #9DA4BD;
+}
+
+/* ------ABOUT--------- */
+
+.about {
+}
+.about-list {
+}
+
+.about-item {
+}
+.about-pre-title {
+    color:var(--secondary-color);
+}
+.about-title {
+    color: var(--secondary-color);
+}
+.about-after-title {
+    color: #555;
+    }
+.about-text {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.86; /* 185.714% */
+    letter-spacing: 0.28px;
+}
+.about-btn {
+    color:#303030;
+}
+
+
+/* ----------PRICES------------- */
+.prices {
+    background-color: aquamarine;
+}
+.prices-pre-title {
+    color: rgba(157, 164, 189, 0.60);
+}
+.prices-title {
+    color: var(--main-color);
+}
+.prices-list {
+}
+.prices-item {
+}
+.prices-list-text {
+    color: #9DA4BD;
+    font-size: 18px;
+    line-height: 1.67; /* 166.667% */
+    letter-spacing: 0.36px;
+}
+.prices-btn {
+    color:var(--main-btn-color);
+}
+
+/* --------BENEFITS-------- */
+.benefits {
+}
+.benefits-list {
+}
+.benefits-item span{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
+.benefits-item-text {
+    color: #303030;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+}
+.benefits-pre-title {
+    color:var(--secondary-color);
+}
+.benefits-title {
+    color:var(--secondary-color);
+}
+.benefits-after-title {
+    color: #555;
+}
+
+/* --------  BARBERS  --------- */
+
+.barbers {
+}
+.barbers-pre-title {
+    color: var(--secondary-color);
+}
+
+.barbers-title {
+    color: var(--secondary-color);
+}
+
+.barbers-list {
+}
+
+.barbers-item {
+}
+.barbers-item-title {
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+.barbers-item-text {
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+/* ------GALLERY ----- */
+.gallery {
+}
+.gallery-pre-title {
+    color: var(--secondary-color);
+}
+
+.gallery-list {
+}
+
+.gallery-item {
+}
+
+
+/* ------ONLINE------- */
+.online-title {
+    color: var(--main-color);
+}
+
+/* ------CONTACTS----- */
+.contacts-title {
+    color: var(--main-color);
+}
+
+.contacts-address {
+    font-style: normal;
+}
+.contacts-map-link {
+    color: #9DA4BD;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.67; /* 166.667% */
+    letter-spacing: 0.36px;
+}
+
+.contacts-list {
+}
+
+.contacts-item {
+}
+.contacts-link {
+    color: #9DA4BD;
+    font-size: 18px;
+    line-height: 1.67; /* 166.667% */
+    letter-spacing: 0.36px;
+}
+.contacts-subtitle {
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.contacts-schedule {
+    color: #9DA4BD;
+    font-size: 18px;
+    line-height: 1.67; /* 166.667% */
+    letter-spacing: 0.36px;
+}
