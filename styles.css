@@ -275,3 +275,32 @@ li {
     line-height: 1.67; /* 166.667% */
     letter-spacing: 0.36px;
 }
+
+
+/* -------BOTTOM------ */
+.bottom {
+}
+.bottom-logo {
+    color: #9DA4BD;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+}
+.bottom-list {
+}
+
+.bottom-item {
+}
+.bottom-link {
+    color: var(--secondary-color);
+    font-family: Open Sans, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+}
+
+.bottom-link:hover, .bottom-link:focus{
+    color:var(--accent-color);
+}
