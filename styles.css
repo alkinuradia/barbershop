@@ -276,6 +276,9 @@ li {
     letter-spacing: 0.36px;
 }
 
+.contacts-link:hover, .contacts-link:focus, .contacts-map-link:hover, .contacts-map-link:focus {
+    color:var(--accent-color);
+}
 
 /* -------BOTTOM------ */
 .bottom {
