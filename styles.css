@@ -71,14 +71,34 @@ li {
 
 .btn {
     font-family: inherit;
+    min-width: 160px;
+    height: 40px;
+    background-color: transparent;
     font-size: 12px;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.08px;
     text-transform: uppercase;
+    border-radius: 25px;
+    border: 1px solid #FF6C00;
 }
 
+.btn:hover, .btn:focus {
+    color: var(--accent-color);
+}
+
+
 /* --------------HEADER----------------- */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
 
 .header-link, .header-tel {
     color:var(--main-color);
@@ -99,8 +119,27 @@ li {
     padding-bottom: 32px;
 }
 
+.header-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header-link.current {
+    color: var(--accent-color);
+}
+
 .header-btn {
     color:var(--main-btn-color);
+    min-width: 160px;
+    height: 40px;
+    background-color: transparent;
+    margin-left: 40px;
+    border-radius: 25px;
+    border: 1px solid #FF6C00;
+}
+
+.header-logo {
+    margin-right: 131px;
 }
 
 
@@ -108,6 +147,21 @@ li {
 .hero {
     background-color: blue;
 }
+
+.hero-container {
+    display: flex;
+}
+
+.hero-list {
+    width: 100px;
+}
+
+.hero-wrap {
+    background-color: #3d3e45;
+    padding: 272px 100px 208px 100px;
+    flex-grow: 1;
+}
+
 
 .hero-link {
     color:var(--secondary-color);
@@ -122,6 +176,7 @@ li {
 }
 .hero-pre-title {
     color: rgba(157, 164, 189, 0.60);
+    margin-bottom: 20px;
 }
 .hero-title {
     color:var(--main-color);
@@ -130,19 +185,25 @@ li {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 3.6px;
+    margin-bottom: 20px;
 }
 .hero-after-title {
     color: #9DA4BD;
+    max-width: 360px;
 }
 
 /* ------ABOUT--------- */
 
-.about {
+.about-container {
+    display: flex;
+    gap: 30px;
 }
 .about-list {
+    display: flex;
+    gap: 30px;
 }
-
-.about-item {
+.about-wrap {
+    max-width: 470px;
 }
 .about-pre-title {
     color:var(--secondary-color);
@@ -169,6 +230,11 @@ li {
 
 
 /* ----------PRICES------------- */
+.prices-wrap {
+    display: flex;
+    justify-content: space-between;
+
+}
 .prices {
     background-color: aquamarine;
 }
@@ -183,8 +249,14 @@ li {
 .prices-list {
     border: 1px solid green;
     padding: 30px 20px;
+    width: calc((100% - 30px) / 2);
 }
 .prices-item {
+    display: flex;
+    justify-content: space-between;
+}
+.prices-item+.prices-item {
+    margin-top: 20px;
 }
 .prices-list-text {
     color: #9DA4BD;
@@ -260,12 +332,15 @@ li {
 }
 
 .barbers-list {
+    display: flex;
+    gap: 30px;
 }
 
 .barbers-wrap{
     padding-top: 30px;
 }
 .barbers-item {
+    width: calc((100% - 60px) / 3);
 }
 .barbers-item-title {
     color: var(--secondary-color);
@@ -294,9 +369,13 @@ li {
 }
 
 .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .gallery-item {
+    width: calc((100% - 90px) / 4);
 }
 
 
@@ -387,4 +466,10 @@ li {
 
 .bottom-link:hover, .bottom-link:focus{
     color:var(--accent-color);
+}
+
+.bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
