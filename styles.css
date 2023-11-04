@@ -244,7 +244,7 @@ li {
     justify-content: space-between;
 }
 .prices {
-    background-image:url(../img/prices-bg.jpg);
+    background-image:url(./img/prices-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
