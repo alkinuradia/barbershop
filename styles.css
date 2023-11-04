@@ -145,7 +145,7 @@ li {
 
 /* --------------HERO----------------- */
 .hero {
-    background-color: blue;
+    
 }
 
 .hero-container {
@@ -157,7 +157,10 @@ li {
 }
 
 .hero-wrap {
-    background-color: #3d3e45;
+    background-image: url(../barbershop/img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
     padding: 272px 100px 208px 100px;
     flex-grow: 1;
 }
@@ -185,6 +188,7 @@ li {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 3.6px;
+    margin-bottom: 20px;
     margin-bottom: 20px;
 }
 .hero-after-title {
