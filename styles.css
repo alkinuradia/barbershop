@@ -24,6 +24,7 @@ button {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 body {
@@ -61,7 +62,18 @@ li {
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+
+.pre-title::before{
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+}
+
 .after-title {
     font-size: 18px;
     line-height: 1.67; /* 166.667% */
@@ -87,6 +99,12 @@ li {
     box-shadow: 1px -7px 71px 13px rgba(76,61,60,0.71);
 }
 
+.thumb {
+    border-radius: 4px;
+    width: 270px;
+    box-shadow: -14px -9px 5px 0px rgba(255,108,0,0.75);
+    overflow: hidden;
+}
 
 /* --------------HEADER----------------- */
 .header-container {
@@ -155,6 +173,28 @@ li {
 
 .hero-list {
     width: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.hero-list::before {
+    content: '';
+    width: 1px;
+    height: 60px;
+    background: currentColor;
+
+}
+
+.hero-item{
+    display: flex;
+    transform: rotate(-90deg);
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .hero-wrap {
@@ -166,13 +206,13 @@ li {
     flex-grow: 1;
 }
 
-
 .hero-link {
     color:var(--secondary-color);
     font-size: 11px;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 2.2px;
+    
 }
 
 .hero-link:hover, .hero-link:focus{
@@ -182,6 +222,7 @@ li {
     color: rgba(157, 164, 189, 0.60);
     margin-bottom: 20px;
 }
+
 .hero-title {
     color:var(--main-color);
     font-family: Raleway, sans-serif;
@@ -208,9 +249,6 @@ li {
     gap: 30px;    
 }
 
-.about-item {
-    box-shadow: 20px -13px 31px 1px rgba(255,108,0,0.57);
-}
 .about-wrap {
     max-width: 470px;
 }
@@ -218,6 +256,7 @@ li {
     color:var(--secondary-color);
     margin-bottom: 20px;
 }
+
 .about-title {
     color: var(--secondary-color);
     margin-bottom: 20px;
@@ -248,6 +287,8 @@ li {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .prices-pre-title {
     color: rgba(157, 164, 189, 0.60);
@@ -260,12 +301,30 @@ li {
 .prices-list {
     padding: 30px 20px;
     width: calc((100% - 30px) / 2);
-    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
 }
+
+.prices-list:first-child{
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
+}
+
+.prices-list:last-child{
+    background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
+}
+
 .prices-item {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
 }
+
+.prices-item::after{
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: rgba(157, 164, 189, 0.12);
+}
+
 .prices-item+.prices-item {
     margin-top: 20px;
 }
@@ -275,6 +334,11 @@ li {
     line-height: 1.67; /* 166.667% */
     letter-spacing: 0.36px;
 }
+
+.prices-list-text:last-child{
+    order: 1;
+}
+
 .prices-btn {
     color:var(--main-btn-color);
     margin: 0 auto;
@@ -352,8 +416,10 @@ li {
     padding-top: 30px;
 }
 .barbers-item {
+    border-radius: 5px 5px 5px 5px;
     width: calc((100% - 60px) / 3);
-    box-shadow: 20px -13px 31px 1px rgba(255,108,0,0.57);
+    box-shadow: -14px -9px 5px 0px rgba(255,108,0,0.75);
+    overflow: hidden;
 }
 .barbers-item-title {
     color: var(--secondary-color);
@@ -416,22 +482,46 @@ li {
 
 .gallery-item {
     width: calc((100% - 90px) / 4);
-    box-shadow: 20px -13px 31px 1px rgba(255,108,0,0.57);
+    border-radius: 4px;
+    box-shadow: -14px -9px 5px 0px rgba(255,108,0,0.75);
+    overflow: hidden;
 
 }
 
 
 /* ------ONLINE------- */
+
+.online{
+    width: calc(50% - 15px);
+}
+
+
 .online-title {
     color: var(--main-color);
 }
 
 /* ------CONTACTS----- */
-
-
-.contacts {
-    background-color: #FF6C00;
+.contacts{
+    width: calc(50% - 15px);
+    padding-left: 100px;
 }
+
+.contact-wrap {
+    background-image: url(./img/bg-contacts.png);
+    background-color: #191C26;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.contact-wrap > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
 .contacts-title {
     color: var(--main-color);
     margin-bottom: 40px;
@@ -497,6 +587,13 @@ li {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+}
+
+.bottom-list::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: currentColor;
 }
 
 .bottom-item {

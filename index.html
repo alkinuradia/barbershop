@@ -47,8 +47,8 @@
     <section class="about section">
         <div class="container about-container">
             <ul class="about-list list">
-                <li class="about-item"><img src="./img/about-img-1.jpg" alt="haircut" width="270" height="445"></li>
-                <li class="about-item"><img src="./img/about-img-2.jpg" alt="haircut" width="270" height="445"></li>
+                <div class="thumb"><li class="about-item"><img src="./img/about-img-1.jpg" alt="haircut" width="270" height="445"></li></div>
+                <div class="thumb"><li class="about-item"><img src="./img/about-img-2.jpg" alt="haircut" width="270" height="445"></li></div>
             </ul>
             <div class="about-wrap">
                 <p class="about-pre-title pre-title">About</p>
@@ -229,31 +229,35 @@
         <div class="container">
             <p class="gallery-pre-title pre-title">In Latin, "barba" means "beard"</p>
         <ul class="gallery-list list">
-            <li class="gallery-item"><img src="./img/gallery-1.jpg" alt="haircut" width="270" height="360" class="gallery-pic"></li>
+            <li class="gallery-item"><img src="./img/gallery-1.jpg" alt="haircut" width="270" height="360"></li>
             <li class="gallery-item"><img src="./img/gallery-2.jpg" alt="haircut" width="270" height="360"></li>
             <li class="gallery-item"><img src="./img/gallery-3.jpg" alt="haircut" width="270" height="360"></li>
             <li class="gallery-item"><img src="./img/gallery-4.jpg" alt="haircut" width="270" height="360"></li>
         </ul>
         </div>
     </section>
-    <section class="online section">
-            <h2 class="online-title section-title">online-booking</h2>
-    </section>
-    <section class="contacts section">
-            <h2 class="contacts-title section-title">Contacts</h2>
-            <address class="contacts-address"><a class="contacts-map-link link" href="https://maps.app.goo.gl/SQzhfFyof3S4JkGQ6" target="_blank" rel="noopener noreferrer nofollow">st. Vasilkivska, 7A <br /> Kyiv, 08132</a></address>
-            <ul class="contacts-list list">
-                <li class="contacts-item"><a  class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a></li>
-                <li class="contacts-item"><a class="contacts-link" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
-            </ul>
-            <p  class="contacts-subtitle">Working hours</p>
-            <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
-    </section>
+    <div class="contact-wrap">
+        <div class="container">
+            <section class="online section">
+                <h2 class="online-title section-title">online-booking</h2>
+        </section>
+        <section class="contacts section">
+                <h2 class="contacts-title section-title">Contacts</h2>
+                <address class="contacts-address"><a class="contacts-map-link link" href="https://maps.app.goo.gl/SQzhfFyof3S4JkGQ6" target="_blank" rel="noopener noreferrer nofollow">st. Vasilkivska, 7A <br /> Kyiv, 08132</a></address>
+                <ul class="contacts-list list">
+                    <li class="contacts-item"><a  class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a></li>
+                    <li class="contacts-item"><a class="contacts-link" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+                </ul>
+                <p  class="contacts-subtitle pre-title">Working hours</p>
+                <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
+        </section>
+        </div>
+    </div>
    </main>
    <footer class="bottom">
     <div class="container bottom-container">
         <p class="bottom-logo">&#169;Copyright 2020</p>
-    <ul class="bottom-list list">
+    <ul class="bottom-list list ">
         <li class="bottom-item"><a  class="bottom-link link" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
         <li class="bottom-item"><a  class="bottom-link link" target="_blank" rel="noopener noreferrer nofollow">Youtube </a></li>
     </ul>
