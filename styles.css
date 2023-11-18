@@ -159,7 +159,9 @@ li {
 .header-logo {
     margin-right: 131px;
 }
-
+.logo-icon {
+    fill: #303030;
+}
 
 /* --------------HERO----------------- */
 .hero {
@@ -351,18 +353,40 @@ li {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+.benefits-container {
+    display: flex;
+    padding-left: 100px;
+}
+
+.benefits-wrap {
+    max-width: 500px;
+    margin-right: 70px;
+    padding-top: 9px;
+}
+
 .benefits-list {
+    display: flex;
+    width: 580px;
+    flex-wrap: wrap;
 }
 
 .benefits-item {
-    width: 160px;
+    width: 170px;
     height: 133px;
-    border: 1px solid aquamarine;
     background: #F7F7F7;
     padding: 20px 24px;
     margin-top: 6px;
 }
 
+.benefits-item:nth-child(odd) {
+    margin-right: 30px;
+
+}
+
+.benefits-item:nth-child(even){
+    margin-top: 30px;
+}
 
 .benefits-item span{
     color: var(--secondary-color);
@@ -373,6 +397,17 @@ li {
     letter-spacing: 2.1px;
     display: block;
 }
+
+.benefits-item span::after{
+    content: '+';
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    text-align: center;
+    vertical-align: top;
+}
+
 .benefits-item-text {
     color: #303030;
     text-align: center;
@@ -387,7 +422,15 @@ li {
 .benefits-title {
     color:var(--secondary-color);
     margin-bottom: 20px;
+    display: inline-flex;
+    align-items: flex-start;
 }
+
+.benefits-title::before{
+    content: '?';
+    transform: rotate(-180deg);
+}
+
 .benefits-after-title {
     color: #555;
 }
@@ -416,6 +459,7 @@ li {
     padding-top: 30px;
 }
 .barbers-item {
+    background-color: #F5F4FA;
     border-radius: 5px 5px 5px 5px;
     width: calc((100% - 60px) / 3);
     box-shadow: -14px -9px 5px 0px rgba(255,108,0,0.75);
@@ -507,8 +551,8 @@ li {
 }
 
 .contact-wrap {
-    background-image: url(./img/bg-contacts.png);
-    background-color: #191C26;
+    background: url(./img/bg-contacts.png);
+    background-color:#191C26;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: right;
@@ -536,7 +580,13 @@ li {
     font-weight: 700;
     line-height: 1.67; /* 166.667% */
     letter-spacing: 0.36px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contacts-icon {
+    fill: #9DA4BD;
 }
 
 .contacts-list {
@@ -550,6 +600,9 @@ li {
     font-size: 18px;
     line-height: 1.67; /* 166.667% */
     letter-spacing: 0.36px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 .contacts-subtitle {
     color: #FFF;
@@ -569,6 +622,10 @@ li {
 
 .contacts-link:hover, .contacts-link:focus, .contacts-map-link:hover, .contacts-map-link:focus {
     color:var(--accent-color);
+}
+
+.contacts-link:hover .contacts-icon, .contacts-link:focus .contacts-icon, .contacts-map-link:hover .contacts-icon, .contacts-map-link:focus .contacts-icon {
+    fill:var(--accent-color);
 }
 
 /* -------BOTTOM------ */
